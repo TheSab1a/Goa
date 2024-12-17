@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Example</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <form action="/button1" method="post">
+        <button type="submit">Button 1</button>
+    </form>
+    <form action="/button2" method="post">
+        <button type="submit">Button 2</button>
+    </form>
+</body>
+</html>
+
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/button1', methods=['POST'])
+def button1():
+    return "Button 1 clicked!"
+
+@app.route('/button2', methods=['POST'])
+def button2():
+    return "Button 2 clicked!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+    pip install flask
+
+    python app.py
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Heading Levels</title>
+</head>
+<body>
+    <h1>This is Heading Level 1</h1>
+    <h2>This is Heading Level 2</h2>
+    <h3>This is Heading Level 3</h3>
+    <h4>This is Heading Level 4</h4>
+    <h5>This is Heading Level 5</h5>
+    <h6>This is Heading Level 6</h6>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Example</title>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph. It contains some text that explains or elaborates on the topic introduced by the heading. You can add as much text as you like here.</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample paragraph with an image below:</p>
+    <img src="example.jpg" alt="Description of the image" width="500">
+</body>
+</html>

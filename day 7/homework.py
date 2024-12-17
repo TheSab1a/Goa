@@ -20,7 +20,7 @@ else:
     division = "Undefined (division by zero is not allowed)"
 
 # Printing the results of the mathematical operations
-print(f"\nThe numbers you entered are: {num1} and {num2}")
+print(f"\nThe number i entered are: {num1} and {num2}")
 print(f"Their sum is: {sum_result}")
 print(f"Their difference is: {difference}")
 print(f"Their product is: {product}")
