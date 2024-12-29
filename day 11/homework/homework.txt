@@ -1,0 +1,87 @@
+2 < 5 → true
+8 < 3 → false
+15 < 20 → true
+-10 < -5 → true
+0 < 1 → true
+100 < 99 → false
+50 < 75 → true
+7 < 7 → false
+-1 < 0 → true
+1.5 < 2.5 → true
+30 < 29 → false
+101 < 101 → false
+-50 < -49 → true
+5 < 5.1 → true
+99.9 < 100 → true
+
+
+10 > 5 → true
+3 > 8 → false
+25 > 20 → true
+-5 > -10 → true
+1 > 0 → true
+99 > 100 → false
+75 > 50 → true
+7 > 7 → false
+0 > -1 → true
+2.5 > 1.5 → true
+29 > 30 → false
+101 > 101 → false
+-49 > -50 → true
+5.1 > 5 → true
+100 > 99.9 → true
+
+
+
+
+5 != 3 → true
+10 != 10 → false
+15 != 7 → true
+-1 != -1 → false
+0 != 1 → true
+50 != 50 → false
+99 != 100 → true
+8 != 8 → false
+3 != 2 → true
+101 != 100 → true
+45 != 46 → true
+-5 != 5 → true
+7.0 != 7 → false
+25 != 30 → true
+60 != 60 → false
+
+
+
+5 == 5 → true
+10 == 20 → false
+15 == 15 → true
+-1 == -1 → true
+0 == 0 → true
+50 == 100 → false
+99 == 99 → true
+8 == 8.0 → true
+3 == 2.99 → false
+101 == 100 → false
+45 == 45 → true
+-5 == 5 → false
+7.0 == 7 → true
+25 == 30 → false
+60 == 60 → true
+
+
+
+
+
+
+"Hello" == "HelloWorld" → false
+"Python" != "Java" → true
+"Apple" > "Banana" → false
+"Cat" < "Dog" → true
+"sun" == "Sun" → false
+"Galaxy" != "galaxy" → true
+"world" > "World" → true
+"Tree" < "tree" → true
+"OpenAI" == "OpenAI" → true
+"Code" != "code" → true
+
+
