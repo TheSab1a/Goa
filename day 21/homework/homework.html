@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change P Color</title>
+    <style>
+        div p {
+            color: red; /* აქ შეგიძლია სხვა ფერი მიუთითო */
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>პირველი პარაგრაფი</p>
+    <p>მეორე პარაგრაფი</p>
+    <p>მესამე პარაგრაფი</p>
+    <p>მეოთხე პარაგრაფი</p>
+    <p>მეხუთე პარაგრაფი</p>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Example</title>
+    <style>
+        /* div-ს ვიყენებთ სტილის მისაცემად */
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        
+        .red-box {
+            background-color: red;
+            padding: 10px;
+            color: white;
+        }
+
+        .blue-box {
+            background-color: blue;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- div კონტეინერი გამოიყენება შიგნით მყოფი ელემენტების დასაჯგუფებლად -->
+    <div class="container">
+        <h2>ეს არის div კონტეინერი</h2>
+        <p>ეს ტექსტი div-ის შიგნით არის მოთავსებული.</p>
+
+        <!-- div შეგვიძლია გამოვიყენოთ კონკრეტული სტილის მისაცემად -->
+        <div class="red-box">
+            ეს არის წითელი ბლოკი
+        </div>
+
+        <div class="blue-box">
+            ეს არის ლურჯი ბლოკი
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse; /* ეს შლის უჯრებს შორის სიცარიელეს */
+        }
+        th, td {
+            border: 1px solid black; /* ქმნის შავ საზღვრებს უჯრებისთვის */
+            padding: 10px; /* უჯრების შიგნით სიცარიელე */
+            text-align: center; /* ტექსტის ცენტრში გასწორება */
+        }
+        th {
+            background-color: lightgray; /* სათაურის უჯრებისთვის ფონი */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <table> - ცხრილის შექმნა -->
+    <table>
+        <!-- <tr> - ეს არის მწკრივი (row) -->
+        <tr>
+            <!-- <th> - ცხრილის სათაური (table header) -->
+            <th>სახელი</th>
+            <th>გვარი</th>
+            <th>ასაკი</th>
+        </tr>
+
+        <!-- მეორე მწკრივი -->
+        <tr>
+            <!-- <td> - მონაცემების უჯრა (table data) -->
+            <td>თემო</td>
+            <td>გიორგაძე</td>
+            <td>25</td>
+        </tr>
+
+        <!-- მესამე მწკრივი -->
+        <tr>
+            <td>ანა</td>
+            <td>მაჭარაძე</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5x5 Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse; /* საზღვრების შერწყმა */
+        }
+        th, td {
+            border: 1px solid black; /* საზღვარი უჯრებისთვის */
+            padding: 10px; /* შიდა დაშორება */
+            text-align: center; /* ტექსტის გასწორება */
+        }
+        th {
+            background-color: lightgray; /* სათაურის უჯრების ფერი */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>5x5 ცხრილი</h2>
+
+    <table>
+        <!-- სათაურის მწკრივი -->
+        <tr>
+            <th>სვეტი 1</th>
+            <th>სვეტი 2</th>
+            <th>სვეტი 3</th>
+            <th>სვეტი 4</th>
+            <th>სვეტი 5</th>
+        </tr>
+
+        <!-- 1-ლი მწკრივი -->
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+            <td>1,5</td>
+        </tr>
+
+        <!-- 2-ე მწკრივი -->
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+            <td>2,4</td>
+            <td>2,5</td>
+        </tr>
+
+        <!-- 3-ე მწკრივი -->
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <td>3,3</td>
+            <td>3,4</td>
+            <td>3,5</td>
+        </tr>
+
+        <!-- 4-ე მწკრივი -->
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+            <td>4,5</td>
+        </tr>
+
+        <!-- 5-ე მწკრივი -->
+        <tr>
+            <td>5,1</td>
+            <td>5,2</td>
+            <td>5,3</td>
+            <td>5,4</td>
+            <td>5,5</td>
+        </tr>
+    </table>
+
+</body>
+</html>
