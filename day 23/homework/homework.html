@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onclick Alert Example</title>
+</head>
+<body>
+
+<p onclick="showMessage()">დააწკაპე აქ</p>
+
+<script>
+    function showMessage() {
+        alert("გამარჯობა! ეს არის შეტყობინება.");
+    }
+</script>
+
+</body>
+</html>
+
+
+<head>
+    <title>ფოტოს შეცვლა</title>
+</head>
+<body>
+
+<h2>ფოტოს შეცვლის მაგალითი</h2>
+
+
+<img id="mainPhoto" src="photo1.jpg" width="300" alt="ფოტო">
+
+<br><br>
+
+<button onclick="changePhoto('photo2.jpg')">პირველი ფოტო</button>
+<button onclick="changePhoto('photo3.jpg')">მეორე ფოტო</button>
+
+<script>
+    function changePhoto(photoName) {
+        document.getElementById('mainPhoto').src = photoName;
+    }
+</script>
+
+</body>
+
+

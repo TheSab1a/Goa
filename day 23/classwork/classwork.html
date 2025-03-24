@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საკლასო დავალება</title>
+</head>
+<body>
+    <!-- პირველი დავალება -->
+    <button onclick="showMessage()">დააჭირე ღილაკს</button>
+    
+    <script>
+        function showMessage() {
+            alert('ღილაკზე დააჭირეთ!');
+        }
+    </script>
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საკლასო დავალება</title>
+</head>
+<body>
+    <!-- პირველი დავალება -->
+    <button onclick="showMessage()">დააჭირე ღილაკს</button>
+    
+    <!-- მეორე დავალება -->
+    <h1 onclick="showTitleMessage()">დააჭირე სათაურს</h1>
+    
+    <script>
+        function showMessage() {
+            alert('ღილაკზე დააჭირეთ!');
+        }
+        
+        function showTitleMessage() {
+            alert('H1 სათაურზე დააჭირეთ!');
+        }
+    </script>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფოტოს შეცვლა ღილაკებით</title>
+</head>
+<body>
+
+    <h1 onclick="alert('ეს არის სათაური!')">დააჭირეთ სათაურს</h1>
+
+    <button onclick="alert('ღილაკზე დააჭირეთ!')">დააჭირეთ აქ</button>
+
+    <br><br>
+
+    <img id="mainImage" src="image1.jpg" alt="სურათი" width="300">
+
+    <br><br>
+
+    <button onclick="changeImage('image1.jpg')">სურათი 1</button>
+    <button onclick="changeImage('image2.jpg')">სურათი 2</button>
+    <button onclick="changeImage('image3.jpg')">სურათი 3</button>
+    <button onclick="changeImage('image4.jpg')">სურათი 4</button>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
